@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Carga de Trabajo Operaciones (CTO)</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/signup-form.css" type="text/css" />
+
+
+    <!-- Custom Fonts -->
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+<!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo STI" width="200px" height="150px">CTO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Registro</a>
+            </div>
+        </div>
+    </nav>
+<!-- FIN NAV -->
+   	<div class="container">
+
+    <div class="signup-form-container">
+    
+         <!-- form start -->
+         <form method="post" role="form" id="register-form" autocomplete="off" action="submit.html">
+         
+         <div class="form-header">
+         	<h3 class="form-title"><i class="fa fa-user"></i> Regístrate</h3>
+                      
+         <div class="pull-right">
+             <h3 class="form-title"><span class="glyphicon glyphicon-pencil"></span></h3>
+         </div>
+                      
+         </div>
+                  
+         <div class="form-body">
+         
+         	  <div class="alert alert-info" id="message" style="display:none;">
+              Guardado
+              </div>
+                      
+         	  <div class="form-group">
+                   <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                   <input name="name" type="text" class="form-control" placeholder="Usuario">
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+                        
+              <div class="form-group">
+                   <div class="input-group">
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                   <input name="email" type="text" class="form-control" placeholder="Email">
+                   </div> 
+                   <span class="help-block" id="error"></span>                     
+              </div>
+                        
+              <div class="row">
+                        
+                   <div class="form-group col-lg-6">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="password" id="password" type="password" class="form-control" placeholder="Contraseña">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                            
+                   <div class="form-group col-lg-6">
+                        <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="cpassword" type="password" class="form-control" placeholder="Repetir Contraseña">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                            
+             </div>
+                        
+                        
+            </div>
+            
+            <div class="form-footer">
+                 <button type="submit" class="btn btn-info">
+                 <span class="glyphicon glyphicon-log-in"></span> Guardar
+                 </button>
+            </div>
+
+
+            </form>
+            
+           </div>
+
+	</div>
+    <!-- jQuery -->
+    <script src="jquery.min.js"></script>
+    <script src="assets/register.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/jquery-1.11.2.min.js"></script>
+    <script src="assets/jquery.validate.min.js"></script>
+  
+</body>
+</html>

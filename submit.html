@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Carga de Trabajo Operaciones (CTO) - Mantenedor</title>
+
+        <link rel="stylesheet" href="estilos.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+<!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo STI" width="200px" height="150px">CTO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Registro</a>
+                <a class="nav-item nav-link" href="#">Mantenedor</a>
+
+            </div>
+        </div>
+    </nav>
+<!-- FIN NAV -->
+<div class="container">
+<div id="mensaje-alerta">
+        </div>
+
+        <div class="jumbotron row ">
+            <h2> Gestión de Usuarios</h2>
+
+            <div class="col-md-6">
+                <hr>
+                    <p class="modo"> <span class="glyphicon glyphicon-plus"></span><i class="fa fa-address-book" aria-hidden="true"></i> Agregar Usuario</p>
+                <form id="user-form">
+                    <input  class="form-control" type="text" id="nombre" placeholder="Nombre">
+                    <input  class="form-control" type="email" id="correo" placeholder="Correo">
+                    <input  class="form-control" type="number" id="peso" placeholder="Peso en kg">
+                    <input  class="form-control" type="date" id="fecha_nacimiento" placeholder="Fecha de nacimiento">
+                    <br>
+                    <input type="submit" class="btn btn-success" value=" Guardar">
+                </form>
+                <br>
+                <br>
+                <div id="numeroUser">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <br>
+        <br>
+        <table class="table" id="dbUser-list">
+
+        </table>
+    <!-- jQuery -->
+    <script type="text/javascript" src="funciones.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="assets/register.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/jquery-1.11.2.min.js"></script>
+    <script src="assets/jquery.validate.min.js"></script>
+  
+</body>
+</html>
+
